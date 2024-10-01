@@ -6,8 +6,7 @@
         <style>
 body {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -17,7 +16,7 @@ body {
 
 .button-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 300px;
 }
 
 .title {
