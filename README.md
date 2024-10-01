@@ -20,6 +20,11 @@ body {
     margin-bottom: 20px;
 }
 
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .oval-button {
     background: linear-gradient(45deg, #6a5acd, #1e90ff);
     color: white;
@@ -28,6 +33,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-weight: bold;
     font-size: 16px;
     border-radius: 25px;
     transition: background-color 0.3s, transform 0.2s;
@@ -45,7 +51,7 @@ body {
 
 
     <div class="button-container">
-        <h2>Создание кошелька</h2>
+        <h1 class="title">Создание кошелька</h1>
         <button class="oval-button">Создать новый кошелёк</button>
     </div>
 
