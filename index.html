@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
         <style>
-        body {
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: var(--tg-theme-bg-color)
+    background-color: black;
 }
+
 
 .button-container {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .oval-button {
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+    background: linear-gradient(45deg, #6a5acd, #1e90ff);
+    color: white;
     border: none;
     padding: 15px 30px;
     text-align: center;
@@ -32,7 +35,7 @@
 }
 
 .oval-button:hover {
-    background-color: #45a049;
+    filter: brightness(0.9);
     transform: scale(1.05);
 }
     </style>
@@ -42,6 +45,7 @@
 
 
     <div class="button-container">
+        <h2>Создание кошелька</h2>
         <button class="oval-button">Создать новый кошелёк</button>
     </div>
 
