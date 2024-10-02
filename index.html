@@ -67,13 +67,14 @@ body {
     <script>
         let tg = window.Telegram.WebApp;
         create_wallet = document.getElementsByClassName("oval-button")
-        create_wallet.addEventListener("click", create_wallet)
+        create_wallet.addEventListener("click", create_walletee)
 
-        function create_wallet() {
+        function create_walletee() {
+            console.log("asd")
             let data = 1
 
             tg.sendData(data)
-            
+
             document.body.classList.add('background');
 
         }
