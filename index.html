@@ -33,14 +33,14 @@
             position: relative;
         }
         .circle {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background-color: #ccc;
-            margin: 20px auto;
+            margin: 20px;
             position: relative;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
         }
         h3, h4, h5, h6 {
@@ -61,7 +61,7 @@
         }
         .button {
             padding: 15px;
-            background-color: rgba(50, 50, 50, 0.8);
+            background-color: #1C1C1C;
             border: none;
             border-radius: 25px;
             color: white;
@@ -69,9 +69,11 @@
             flex: 1;
             margin: 0 5px;
             text-align: center;
+            font-weight: bold;
         }
         .highlight {
             text-decoration: underline;
+            font-weight: bold;
         }
         .icons {
             display: flex;
@@ -85,39 +87,40 @@
             width: 50px;
             height: 50px;
         }
+        .boot {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="circle">
-            <!-- Здесь можно вставить картинку -->
-            <img src="placeholder.png" alt="Tron Logo" style="max-width: 80%; max-height: 80%;">
+    <div class="circle">
+        <img src="placeholder.png" alt="Tron Logo" style="max-width: 80%; max-height: 80%;">
+    </div>
+    <h3>Tron TRC-20</h3>
+    <h4 class="balance">0,00 USDT</h4>
+    <h5>$ 0,00 +0,01%</h5>
+
+    <div class="buttons">
+        <button class="button">Отправить</button>
+        <button class="button">Получить</button>
+    </div>
+
+    <h5 class="highlight">Токены</h5>
+
+    <div class="icons">
+        <div class="icon">
+            <img src="account.png" alt="Счёт">
+            <p class="boot">СЧЁТ</p>
         </div>
-        <h3>Tron TRC-20</h3>
-        <h4 class="balance">0,00 USDT</h4>
-        <h6>$ 0,00 +0,01%</h6>
-
-        <div class="buttons">
-            <button class="button">Отправить</button>
-            <button class="button">Получить</button>
+        <div class="icon">
+            <img src="exchange.png" alt="Обмен">
+            <p class="boot">ОБМЕН</p>
         </div>
-
-        <h6 class="highlight">Токены</h6>
-
-        <div class="icons">
-            <div class="icon">
-                <img src="account.png" alt="Счёт">
-                <p>Счёт</p>
-            </div>
-            <div class="icon">
-                <img src="exchange.png" alt="Обмен">
-                <p>Обмен</p>
-            </div>
-            <div class="icon">
-                <img src="settings.png" alt="Настройки">
-                <p>Настройки</p>
-            </div>
+        <div class="icon">
+            <img src="settings.png" alt="Настройки">
+            <p class="boot">НАСТРОЙКИ</p>
         </div>
     </div>
+
 </body>
 </html>
